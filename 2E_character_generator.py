@@ -720,7 +720,7 @@ def findSTR(_str, xSTR):
 def findDEX(dex):
     dex_att = [0,0,0]
     dex_table = [['Rct Adj',-6,-4,-3,-2,-1,0,0,0,0,0,0,0,0,0,0,1,2,2,3],\
-        ['Missle Adj',-6,-4,-3,-2,-1,0,0,0,0,0,0,0,0,0,0,1,2,2,3],\
+        ['Missile Adj',-6,-4,-3,-2,-1,0,0,0,0,0,0,0,0,0,0,1,2,2,3],\
             ['Def Adj',5,5,4,3,2,1,0,0,0,0,0,0,0,0,-1,-2,-3,-4,-4]]
 
     dex_att[0] = dex_table[0][dex]
@@ -742,7 +742,7 @@ def findCON(con, my_class):
             ['Res Srv',30,35,40,45,50,55,60,65,70,75,80,85,90,92,94,96,98,100,100]]
 
     con_att[0] = con_table[0][con]
-    # Warriors recieve additional HP bonus with high CON
+    # Warriors receive additional HP bonus with high CON
     if my_class == 'Fighter' or my_class == 'Paladin' or my_class == 'Ranger':
         if con == 17:
             con_att[0] += 1
@@ -872,8 +872,8 @@ def selectWP(my_class, wprofs):
     all_weapons = ['Battle axe','Blowgun','Composite long bow','Composite short bow','Long bow','Short bow','Club',\
         'Hand crossbow','Heavy crossbow','Light crossbow','Dagger','Dart','Flail','Mace','Pick','Hand/Throwing axe',\
         'Harpoon','Javelin','Knife','Morning star','Awl pike','Bardiche','Bec de corbin','Bill-guisarme','Fauchard',\
-        'Fauchard-fork','Glaive','Glaive-guisarme','Guisarme','Guisarme-voulge','Halberd','Hook fauchard','Lucern hammer',\
-        'Military fork','Partisan','Ranseur','Spetum','Voulge','Quarterstaff','Scourge','Sickle','Sling','Spear','Staff sling',\
+        'Fauchard-fork','Glaive','Glaive-guisarme','Guisarme','Guisarme-voulge','Halberd','Hook fauchard','Lucerne hammer',\
+        'Military fork','Partisan','Ranseur','Septum','Voulge','Quarterstaff','Scourge','Sickle','Sling','Spear','Staff sling',\
         '1-handed bastard sword','2-handed bastard sword','Broad sword','Khopesh','Long sword','Scimitar','Short sword',\
         '2-handed sword','Trident','Warhammer','Whip']
     cleric_weapons = ['Club','Flail','Mace','Morning star','Quarterstaff','Staff sling','Sling','Warhammer']
@@ -1023,13 +1023,13 @@ def specialRace(my_race):
             'Chance of Magic Item Malfunction: 20%','+1 to hit Orcs, Half-Orcs, Goblins, and Hobgoblins']
     elif my_race == 'Elf':
         special = ['Infravision: 60\'','Resistance to Charm/Sleep: 90%',\
-            'Detect Secret Doors: 1 in 6 or 2 in 6 if searching','Sneaking: opponets have -4 penalty to suprise']
+            'Detect Secret Doors: 1 in 6 or 2 in 6 if searching','Sneaking: opponents have -4 penalty to surprise']
     elif my_race == 'Half-Elf':
         special = ['Infravision: 60\'','Resistance to Charm/Sleep: 30%',\
             'Detect Secret Doors: 1 in 6 or 2 in 6 if searching']
     elif my_race == 'Halfling':
         special = ['Infravision: 60\'','+1 to hit with thrown weapons and slings',\
-            'Sneaking: opponets have -4 penalty to suprise']
+            'Sneaking: opponents have -4 penalty to surprise']
     elif my_race == 'Gnome':
         special = ['Infravision: 60\'','Detect Grade/Slope: 83%','Detect Unsafe Walls/Ceiling/Floor: 70%',\
             'Determine Depth: 66%','Detect Direction Underground: 50%',\
@@ -1077,7 +1077,7 @@ def printScores(scores, xSTR, my_class):
             +' | Dmg Adj: ' + str(str_att[1]) + ' | Wgt Allow: ' + str(str_att[2]) + ' | Max Press: ' + str(str_att[3])\
                 +' | Op Drs: ' + str(str_att[4])+ ' | BB/LG: ' + str(str_att[5])+ '%')
     print('DEX | '+str(scores[1])+ ' | Rctn Adj: ' + str(dex_att[0])\
-            +' | Missle Att Adj: ' + str(dex_att[1]) + ' | Def Adj: ' + str(dex_att[2]))
+            +' | Missile Att Adj: ' + str(dex_att[1]) + ' | Def Adj: ' + str(dex_att[2]))
     print('CON | '+str(scores[2])+ ' | HP Adj: ' + str(con_att[0])\
             +' | Sys Shock: ' + str(con_att[1]) + '% | Res Survival: ' + str(con_att[2])+'%')
     print('INT | '+str(scores[3])+ ' | # Lang: ' + str(int_att[0])\
@@ -1248,7 +1248,7 @@ def printClassData(my_class, my_level, my_race, scores, my_armor):
         print('\nExperience Points: ' + str(my_xp))
         print('\nThief Skills:\tPick Pockets: ' + str(my_thief_skills[0]) + '%\tOpen Locks: ' + str(my_thief_skills[1]) + '%\t\tFind/Remove Traps: '\
             + str(my_thief_skills[2]) + '%\n             \tMove Silently: ' + str(my_thief_skills[3]) + '%\tHide in Shadows: ' + str(my_thief_skills[4])\
-            + '%\tDetect Noise: ' + str(my_thief_skills[5]) + '%\n             \tClimb Walls: ' + str(my_thief_skills[6]) + '%\tRead Languiages: '\
+            + '%\tDetect Noise: ' + str(my_thief_skills[5]) + '%\n             \tClimb Walls: ' + str(my_thief_skills[6]) + '%\tRead Languages: '\
             + str(my_thief_skills[7]) + '%')
         print('\nBackstab Multiplier: x' + str(backstab))
         print('\nFollowers: ' + str(followers))
@@ -1257,7 +1257,7 @@ def printClassData(my_class, my_level, my_race, scores, my_armor):
         my_xp, my_thief_skills, wspellsByLevel = classData(my_class, my_level, my_race, scores, my_armor)
         school = ['Mage','General','None']
         print('\nExperience Points: ' + str(my_xp))
-        print('\nThief Skills:\tPick Pockets: ' + str(my_thief_skills[0]) + '%\tDetect Noise: ' + str(my_thief_skills[1]) + '%\n             \tClimb Walls: ' + str(my_thief_skills[2]) + '%\tRead Languiages: '\
+        print('\nThief Skills:\tPick Pockets: ' + str(my_thief_skills[0]) + '%\tDetect Noise: ' + str(my_thief_skills[1]) + '%\n             \tClimb Walls: ' + str(my_thief_skills[2]) + '%\tRead Languages: '\
             + str(my_thief_skills[3]) + '%')
         print('\nWizard Spells:\t1st\t2nd\t3rd\t4th\t5th\t6th')
         print('              \t' + str(wspellsByLevel[0]) + '\t' + str(wspellsByLevel[1]) + '\t' + str(wspellsByLevel[2])\
@@ -1392,7 +1392,7 @@ def printSheet(my_race, my_class, my_level):
     canvas.drawString(90,570,'Max # Hench: ' + str(cha_att[0]))
     canvas.line(155,655,155,570)
     canvas.drawString(160,645,'Dmg Adj: ' + str(str_att[1]))
-    canvas.drawString(160,630,'Missle Att Adj: ' + str(dex_att[1]))
+    canvas.drawString(160,630,'Missile Att Adj: ' + str(dex_att[1]))
     canvas.drawString(160,615,'Sys Shock: ' + str(con_att[1])+ '%')
     canvas.drawString(160,600,'Spell Lvl: ' + str(int_att[1]))
     canvas.drawString(160,585,'Bonus Spells: ' + str(wis_att[1]))

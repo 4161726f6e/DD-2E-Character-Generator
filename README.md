@@ -14,7 +14,7 @@ Specify the desired character class with -c, the desired race with -r, the desir
 
 Additionally, you can specify how many characters to create with -n and specify whether the created character information should be printed to PDF or to the terminal console. If -o is not used, the default is to print a PDF character sheet for each character.
 
-Character names are randomly chosen from male_names.txt and femaile_names.txt. These can be edited to fit your campaign, just keep one name per line. Gender is randomly assigned (binary is assumed).
+Character names are randomly chosen from male_names.txt and female_names.txt. These can be edited to fit your campaign, just keep one name per line. Gender is randomly assigned (binary is assumed).
 
 Wizard and Priest spells are randomly chosen according to class restrictions from the files priest_spells.csv and wizard_spells.csv.
 
