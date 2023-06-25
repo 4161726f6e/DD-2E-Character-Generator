@@ -23,16 +23,25 @@ charClass = ['Fighter','Ranger','Wizard','Cleric','Druid','Thief','Bard','Paladi
 scores = [0,0,0,0,0,0]
 
 #--------------------------------------
+# Roll digital 3d6 for bell curve scores
+#   and return one ability score
+#--------------------------------------
+def roll3d6():
+    score = random.randint(1,6) + random.randint(1,6) + random.randint(1,6)
+
+    return score
+
+#--------------------------------------
 # Roll the digital dice and return
 #   ability scores
 #--------------------------------------
 def roll(scores):
-    scores[0] = random.randint(3,18)
-    scores[1] = random.randint(3,18)
-    scores[2] = random.randint(3,18)
-    scores[3] = random.randint(3,18)
-    scores[4] = random.randint(3,18)
-    scores[5] = random.randint(3,18)
+    scores[0] = roll3d6()
+    scores[1] = roll3d6()
+    scores[2] = roll3d6()
+    scores[3] = roll3d6()
+    scores[4] = roll3d6()
+    scores[5] = roll3d6()
 
     average = sum(scores) / len(scores)
 
