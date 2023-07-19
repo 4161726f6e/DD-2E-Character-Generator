@@ -56,7 +56,7 @@ def Priest_Spells(my_level, WIS):
 
 #--------------------------------------
 # Randomly generate a specific mythos 
-#  for the cleric, including diety, 
+#  for the cleric, including deity, 
 #  spheres, weapons allowed, and
 #  granted powers
 #--------------------------------------
@@ -67,7 +67,7 @@ def getMythos():
         ['Pick'],['Quarterstaff'],['Composite long bow','Composite short bow','Long bow',\
         'Short bow','Javelin','Sling','Spear'],['Dart','Javelin','Spear'],['Composite long bow',\
         'Composite short bow','Long bow','Short bow'],['Club','Scimitar','Sickle'],['Harpoon',\
-        'Spear','Trident'],['Quarterstaff'],['Lucern hammer','Warhammer'],['Club','Mace','Warhammer'],\
+        'Spear','Trident'],['Quarterstaff'],['Lucerne hammer','Warhammer'],['Club','Mace','Warhammer'],\
         ['Battle axe','Mace','Morning star','1-handed bastard sword','2-handed bastard sword','Broad sword',\
         'Long sword','Short sword','2-handed sword','Spear'],['Blowgun','Dart']]
     greater_spheres = [['Plant','Sun','Weather','All'],['Creation','Protection','All'],['Necromantic',\

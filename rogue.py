@@ -159,7 +159,7 @@ def Thief_Skills(my_race, my_level, my_armor, DEX):
     my_skills = DEX_Adjust_TS(my_skills, DEX)
     my_skills = armor_Adjust_TS(my_skills, my_armor)
 
-    # Apply 1st level 60 discrectionary points
+    # Apply 1st level 60 discretionary points
     #  randomly amongst skills, no more than 30
     #  to any single skill
     points = 60
@@ -215,7 +215,7 @@ def Thief_Skills(my_race, my_level, my_armor, DEX):
     return my_skills
 
 #--------------------------------------
-# Return a thief's backstab multipler
+# Return a thief's backstab multiplier
 #--------------------------------------
 def backStab(my_level):
     if my_level < 5:
@@ -331,7 +331,7 @@ def bard_skills(my_race, my_level, my_armor, DEX):
     my_skills[2] -= 10
     my_skills[3] += 5
 
-    # Apply 1st level 20 discrectionary points
+    # Apply 1st level 20 discretionary points
     #  randomly amongst skills
     points = 20
     while points > 0:
